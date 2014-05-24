@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" 
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets" 
+      xmlns:p="http://primefaces.org/ui">
+    
+    <ui:composition template="WEB-INF/template/maintemp.xhtml">
+
+        <ui:define name="title">Good Received Note</ui:define>
+
+        <ui:define name="middle">
+            <h:form id="form">
+                <p:panel id="panel"  style="margin-bottom:10px;">
+                    <h:panelGrid columns="4">
+
+
+                        <h:outputLabel for="sname" value="Supplier Name: " />
+                        <p:inputText id="sname" value="#{pprBean.surname}" required="true" />
+                        <p:message for="sname" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="adres" value="Address : " />
+                        <p:inputText id="adres" value="#{pprBean.surname}" required="true" />
+                        <p:message for="adres" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="tno" value="Telephone Number: " />
+                        <p:inputText id="tno" value="#{pprBean.surname}" required="true" />
+                        <p:message for="tno" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="email" value="Email: " />
+                        <p:inputText id="email" value="#{pprBean.surname}" required="true" />
+                        <p:message for="email" />
+                        <h:outputText value="#{pprBean.surname}" />
+                        
+                        <h:outputLabel for="fno" value="Fax No: " />
+                        <p:inputText id="fno" value="#{pprBean.surname}" required="true" />
+                        <p:message for="fno" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="prd" value="Purchase received Date: " />
+                        <p:inputText id="prd" value="#{pprBean.surname}" required="true"/>
+                        <p:message for="prd" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="porno" value="Purchase ordered no: " />
+                        <p:inputText id="porno" value="#{pprBean.surname}" required="true"/>
+                        <p:message for="porno" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="ino" value="Invoice Number: " />
+                        <p:inputText id="ino" value="#{pprBean.surname}" required="true" />
+                        <p:message for="ino" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="vno" value="Voucher Number: " />
+                        <p:inputText id="vno" value="#{pprBean.surname}" required="true" />
+                        <p:message for="vno" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+
+                        <h:outputLabel for="rqty" value="Received Quentity: " />
+                        <p:inputText id="rqty" value="#{pprBean.surname}" required="true" />
+                        <p:message for="rqty" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="ut" value="Unit Price : " />
+                        <p:inputText id="ut" value="#{pprBean.surname}" required="true"/>
+                        <p:message for="ut" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="faid" value="First Authorizer ID: " />
+                        <p:inputText id="faid" value="#{pprBean.surname}" required="true" />
+                        <p:message for="faid" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="seid" value="Second Authorizer ID: " />
+                        <p:inputText id="seid" value="#{pprBean.surname}" required="true" />
+                        <p:message for="seid" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="fad" value="First Authorizer Date: " />
+                        <p:inputText id="fad" value="#{pprBean.surname}" required="true"/>
+                        <p:message for="fad" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="sed" value="Second Authorizer Date: " />
+                        <p:inputText id="sed" value="#{pprBean.surname}" required="true" />
+                        <p:message for="sed" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+
+                        <p:commandButton value="Submit"/>
+
+                    </h:panelGrid>
+                </p:panel>
+            </h:form>
+        </ui:define>
+
+    </ui:composition>
+
+</html>

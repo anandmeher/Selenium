@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="WEB-INF/template/maintemp.xhtml">
+        <ui:define name="title">Inventery Update Form</ui:define>
+        <ui:define name="middle">
+
+            <h:form id="form">
+
+                <p:panel id="panel"  style="margin-bottom:10px;">
+
+
+                    <h:panelGrid columns="4">
+                       <h:outputLabel for="itnm" value="Item Name: " />
+                        <p:inputText id="itnm" value="#{pprBean.surname}" required="true"/>
+                        <p:message for="itnm" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                       <h:outputLabel for="itcd" value="Item Code: " />
+                        <p:inputText id="itcd" value="#{pprBean.surname}" required="true"/>
+                        <p:message for="itcd" />
+                        <h:outputText value="#{pprBean.surname}" />                  
+
+                        <h:outputLabel for="qty" value="Quentity : " />
+                        <p:inputText id="qty" value="#{pprBean.surname}" required="true" />
+                        <p:message for="qty" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="munit" value="Measure Unit: " />
+                        <p:inputText id="munit" value="#{pprBean.surname}" required="true" />
+                        <p:message for="munit" />
+                        <h:outputText value="#{pprBean.surname}" />
+                        
+                        <h:outputLabel for="sno" value="Serial No: " />
+                        <p:inputText id="sno" value="#{pprBean.surname}" required="true" />
+                        <p:message for="sno" />
+                        <h:outputText value="#{pprBean.surname}" />
+                        
+                        <h:outputLabel for="bnm" value="Brand Name: " />
+                        <p:inputText id="bnm" value="#{pprBean.surname}" required="true" />
+                        <p:message for="bnm" />
+                        <h:outputText value="#{pprBean.surname}" />
+                        
+                         <h:outputLabel for="rno" value="Rack No: " />
+                        <p:inputText id="rno" value="#{pprBean.surname}" required="true" />
+                        <p:message for="rno" />
+                        <h:outputText value="#{pprBean.surname}" />
+                        
+                         <h:outputLabel for="pno" value="Plot No: " />
+                        <p:inputText id="pno" value="#{pprBean.surname}" required="true" />
+                        <p:message for="pno" />
+                        <h:outputText value="#{pprBean.surname}" />
+                        
+                        <h:outputLabel for="itcg" value="Item Catergary: " />
+                        <p:inputText id="itcg" value="#{pprBean.surname}" required="true" />
+                        <p:message for="itcg" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="faid" value="First Authorizer ID: " />
+                        <p:inputText id="faid" value="#{pprBean.surname}" required="true" />
+                        <p:message for="faid" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="seid" value="Second Authorizer ID: " />
+                        <p:inputText id="seid" value="#{pprBean.surname}" required="true" />
+                        <p:message for="seid" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="fad" value="First Authorizer Date: " />
+                        <p:inputText id="fad" value="#{pprBean.surname}" required="true" />
+                        <p:message for="fad" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+                        <h:outputLabel for="sed" value="Second Authorizer Date: " />
+                        <p:inputText id="sed" value="#{pprBean.surname}" required="true"/>
+                        <p:message for="sed" />
+                        <h:outputText value="#{pprBean.surname}" />
+
+
+                        <p:commandButton value="Submit"/>
+
+                    </h:panelGrid>
+                </p:panel>
+            </h:form>
+
+        </ui:define>
+    </ui:composition>
+</html>
